@@ -57,7 +57,7 @@ class Game{
             if (this.started){
                 this.stop(Reason.cancel);
             }else{
-                this.start();
+                this.start(true);
             }
         });
         this.timerIndicator=document.querySelector('.game__timer');
@@ -84,13 +84,16 @@ class Game{
         this.gameScore.innerText=this.carrotCount-this.score;
 
     }
-    start=event=>{
+    start=replay=>{
         this.started=true;
         this.initGame();
         this.showStopButton();
         this.showTimerAndScore();
         this.startGameTimer();
-        sound.playbg();
+        if (replay){
+            sound.playbg();
+        }
+        
     }
     stop(reason){
         this.started=false;
@@ -172,7 +175,7 @@ class Game{
                 this.updateLevelText(this.level);
                 this.nextLevel();
                 this.stopGameTimer();
-                this.start();
+                this.start(false);
                 //this.stop(Reason.win);
             }
         } else if (item==='bug') {

@@ -40,5 +40,5 @@ gameFinishBanner.showWithText(message);
 
 gameFinishBanner.setClickListener(()=>{
   game.initScoreAndCount();
-  game.start();
+  game.start(true);
 });
