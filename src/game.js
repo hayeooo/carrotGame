@@ -36,7 +36,9 @@ export class GameBuilder{
         );
     }
 }
-
+/*Game
+gameDuration, carrotCount,bugCount
+*/
 class Game{
     constructor(gameDuration,carrotCount,bugCount){
         this.gameDuration=gameDuration;

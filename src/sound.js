@@ -1,4 +1,5 @@
 'use strict';
+//Sound that is used at playing Game
 const carrotSound = new Audio('./sound/carrot_pull.mp3');
 const alertSound = new Audio('./sound/alert.wav');
 const bgSound = new Audio('./sound/bg.mp3');

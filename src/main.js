@@ -4,6 +4,8 @@ import {Field,ItemType} from './field.js';
 import * as sound from './sound.js';
 import {GameBuilder, Reason } from './game.js';
 
+//Main Game
+
 const CARROT_SIZE = 80;
 const CARROT_COUNT = 20;
 const BUG_COUNT = 20;

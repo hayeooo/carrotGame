@@ -1,5 +1,6 @@
 'use strict';
 // pop-up에 관련된 로직만 구현
+//onClick, show, hide
 export default class PopUp{
     constructor(){
         this.popUp = document.querySelector('.pop-up');

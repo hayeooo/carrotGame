@@ -1,4 +1,5 @@
 'use strict';
+//Game Field
 import * as sound from './sound.js';
 export const ItemType=Object.freeze({
     carrot:'carrot',
